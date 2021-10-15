@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
 
 
 //this condition is to determine the karma color.
-    val karma = (Math.pow(Math.random(), (119 - healthPoints) / 100.0) * 20).toInt()
+    val karma = (Math.pow(Math.random(), (110 - healthPoints) / 100.0) * 20).toInt()
     val auraVisible = isBlessed && healthPoints > 50 || isImmortal
     val auraColor = when (karma) {
         in 0..5 -> "red"
